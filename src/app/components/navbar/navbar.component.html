@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg bg-white " lang="{{'_lang' | translate}}" dir="{{'_lang_dir' | translate}}">
+  <div class="container">
+      <a class="navbar-brand d-lg-none d-block" href="#">
+          <img src="/assets/img/logoMain.png" alt="Logo" width="103" height="26" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <a class="navbar-brand d-lg-block d-none"  href="#">
+          <img src="/assets/img/logoMain.png" alt="Logo" width="103" height="26" class="d-inline-block align-text-top">
+      </a>
+      <ul class="navbar-nav px-5 ">
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           {{"nav_bar.about_us"|translate}}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{"nav_bar.services"|translate}}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{"nav_bar.products"|translate}}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{"nav_bar.insights"|translate}}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{"nav_bar.careers"|translate}} </a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{"nav_bar.contact_us"|translate}}</a>
+        </li>
+        <li class="nav-item px-2">
+          <button class="nav-link px-5"
+           (click)="changeLanguage('ar')" *ngIf="this.currentLang == 'en'" >العربية</button>
+           <button class="nav-link px-5"
+           (click)="changeLanguage('en')" *ngIf="this.currentLang == 'ar'" >EN</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

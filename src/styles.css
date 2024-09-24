@@ -1,0 +1,627 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+/* navbar */
+nav{
+    color:#333333;
+    font-size: 18px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+}
+ .navbar-collapse {
+    display: flex ;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .155em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    color: #F15B31;
+    direction: ltr;
+}
+
+/* main-page */
+.main{
+    overflow: hidden;
+    height:90vh;
+
+}
+.main .background-main{
+    background: url("/assets/img/Rectangle 1.png");
+    width: 100%;
+    height:90vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+.main .cover-main{
+    background-color: #721A0287;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+}
+.main .parent-logo-main{
+    /* padding-inline-end:120px ; */
+}
+.main .logo-main{
+    background: url("/assets/img/logoShap.png");
+    position: absolute;
+    background-size: contain;
+    width: 190px;
+    background-repeat: no-repeat;
+    height: 190px;
+    top: 70px;
+    gap: 0px;
+    opacity: 0px;
+    z-index: 1;
+
+}
+.main .text-main{
+    font-family: Inter;
+    font-size: 74px;
+    font-weight: 300;
+    line-height: 70.2px;
+    position: absolute;
+    bottom: 30px ;
+    /* left: 200px; */
+    color: rgba(255, 255, 255, 1);
+    /* padding-inline-start:120px ; */
+}
+
+/* what-we-offer section */
+
+.what-we-offer .container-fluid{
+    z-index: 1;
+    position: relative;
+}
+ .logo-offer{
+    width: 50px;
+    height: 55px;
+    background: url("/assets/img/Soor - Final Logos_Symbol Black Colors - Transparent Background 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.what-we-offer .background-offer{
+    background: url("/assets/img/3d-futuristic-background-with-low.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.cover-offer{
+    background-color: rgba(62, 21, 9, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.list-offer{
+    border: 2px solid #fff;
+}
+.parent-list-offer .list-offer:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.parent-list-offer:hover .btn-offer{
+    display: block !important;
+    font-size: 16px;
+    padding: 3px 20px;
+    background-color: #fff;
+
+}
+.btn-offer{
+    display: none;
+    font-size: 16px;
+    padding: 3px 20px;
+    background-color: #fff;
+}
+.btn-offer:hover{
+    border: 1px solid #22100B;
+    color: #F15B31;
+}
+
+
+/* what-we-do section */
+.what-we-do{
+    color: #333333;
+    font-weight: 300;
+}
+.text-do{
+    color: #333333 !important;
+
+}
+.logo-do{
+    width: 50px;
+    height: 55px;
+    background: url("/assets/img/blue_5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* our-unique-way section */
+.our-unique-way .container-fluid{
+    z-index: 1;
+    position: relative;
+
+}
+.background-way{
+    background: url("/assets/img/Rectangle 4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.cover-way{
+    background-color: rgba(126, 34, 8, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.chart-way{
+    height: 342px;
+}
+.chart-way .chart-way-bg{
+    background-color: rgba(241, 91, 49, 0.7)
+}
+.chart1{
+    min-height: 273px;
+    word-wrap: break-word;
+}
+.chart2{
+    min-height: 218px;
+    word-wrap: break-word;
+}
+.chart3{
+    min-height: 342px;
+    word-wrap: break-word;
+}
+/* contact section */
+.bg-contact{
+    background-image: url("/assets/img/Rectangle 17.png") ;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+.cover-contact{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(97, 37, 20, 0.65);
+    z-index: -2;
+}
+.contact  .container-fluid{
+    z-index: 0;
+    position: relative;
+}
+
+.contact .form-control {
+     background-color: #F1F1F1;
+     font-size: 14px;
+     color: #838383;
+     border: 1px solid #D4D4D4;
+}
+.contact .btnSubmit{
+    border-radius: 24px;
+    background-color: #F15B31;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 40px;
+}
+.contact .bg-gray{
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+/* products section */
+.products{
+    background-color: #f0f0f0;
+}
+.bg-products1{
+    background-image: url("/assets/img/Our-products-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 424px;
+    z-index: 0;
+    overflow: hidden;
+}
+.bg-products1:hover ,.bg-products2:hover ,.bg-products3:hover ,.bg-products4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.products .bg-products1 ,.bg-products2,.bg-products3,.bg-products4{
+    transition: all 4s;
+}
+.bg-products2{
+    background-image: url("/assets/img/Our-products-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 424px;
+    z-index: 0;
+}
+.bg-products3{
+    background-image: url("/assets/img/Our-products-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 424px;
+    z-index: 0;
+}
+.bg-products4{
+    background-image: url("/assets/img/Our-products-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 424px;
+    z-index: 0;
+}
+.cover-products1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(134, 35, 6, 0.6);
+    z-index: 1;
+}
+.cover-products2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(148, 38, 7, 0.49);
+    z-index: 1;
+}
+.cover-products3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(142, 37, 7, 0.64);
+    z-index: 1;
+}
+.cover-products4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* background-color: rgba(207, 52, 8, 0.4); */
+    z-index: 1;
+}
+.text-products{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    z-index: 2;
+    color: #fff;
+    font-size: 26px;
+}
+.text-products p{
+    cursor: pointer;
+}
+/* news section */
+.news{
+    background-color: #f0f0f0;
+}
+.bg-news{
+    background-color: rgba(241, 91, 49, 0.07);
+    width: 100%;
+    /* height: 400px; */
+
+}
+.news .carousel {
+    width: 80%;
+}
+.news .carousel img{
+    width: 450px;
+}
+.news .carousel-control-prev {
+    left: -130px;
+    opacity: 1;
+}
+.news .carousel-control-next {
+    right: -130px;
+    opacity: 1;
+
+}
+.news .carousel-indicators {
+
+    bottom: -64px;
+}
+.news .carousel-indicators .active {
+    background-color: #F15B31 !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+.news .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #A7A7A7;
+}
+.news .carousel-control-prev-icon {
+    background-image: url("/assets/img/arrow-narrow-left 2.png")
+}
+.news .carousel-control-next-icon {
+    background-image: url("/assets/img/arrow-narrow-left 1.png")
+}
+.news .btn-news, .get-help .btn-help{
+    border: 1px solid #F15B31;
+    color: #F15B31;
+    font-size: 18px;
+    padding: 5px 30px;
+    border-radius: 0px;
+    font-weight: 400;
+}
+/* get-help section */
+.get-help{
+    /* height: 100vh; */
+    overflow: hidden;
+}
+.get-help .img-help{
+    height: 100%;
+}
+footer{
+    background-color: #22100B;
+    overflow: hidden;
+}
+footer li{
+    padding: 5px 0px;
+}
+
+/* general color & font-size & weight */
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-32{
+    font-size: 32px;
+  }
+.fs-38{
+  font-size: 38px;
+}
+.fs-42{
+    font-size: 42px;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-200{
+    font-weight: 200;
+}
+.text-orange{
+    color: #F15B31;
+}
+.text-lightGray{
+    color:#838383;
+}
+.text-lightBlack{
+    color:#333333
+}
+.text-lightBlue{
+    color: #CBD5E1;
+}
+.bg-lightGray{
+    background-color: #E6E6E6;
+}
+hr{
+    color: #fff;
+}
+
+/* solutions */
+/* cybersecurity-governance */
+.cybersecurity-governance .cover-img{
+    position: absolute;
+    top :0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(199, 67, 30, 0.33);
+
+}
+@media (max-width: 992px) {
+    .navbar-collapse {
+        flex-basis: 100% !important;
+        flex-grow: 1 !important;
+
+    }
+    .collapse:not(.show) {
+        display: none;
+    }
+
+    .fs-m-14{
+    font-size: 14px;
+    }
+    .fs-m-16{
+        font-size: 16px;
+    }
+    .fs-m-18{
+        font-size: 18px;
+    }
+    .fs-m-20{
+        font-size: 20px;
+    }
+    .fs-m-24{
+        font-size: 24px;
+    }
+    .fs-m-32{
+        font-size: 32px;
+    }
+    .fs-m-38{
+    font-size: 38px;
+    }
+    .fs-m-42{
+        font-size: 42px;
+    }
+}
+
+@media(max-width: 768px){
+
+    .main .logo-main{
+        background: url("/assets/img/logoShap.png");
+        position: absolute;
+        background-size: contain;
+        width: 90px;
+        background-repeat: no-repeat;
+        height: 90px;
+        top: 70px;
+        gap: 0px;
+        opacity: 0px;
+        z-index: 1;
+
+    }
+    .main .text-main{
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 70.2px;
+        position: absolute;
+        bottom: 30px ;
+        /* left: 200px; */
+        color: rgba(255, 255, 255, 1);
+    }
+    .main .text-main p{
+        width: 100% !important;
+    }
+    .list-offer{
+        width: 100% !important;
+        padding-inline-start: 10px;
+
+    }
+    .parent-list-offer{
+        display: block !important;
+    }
+    .parent-list-offer:hover .btn-offer{
+        display: none !important;
+        font-size: 16px;
+        padding: 3px 20px;
+        background-color: #fff;
+
+    }
+    .chart-way-sm .chart-way-bg{
+        background-color: rgba(241, 91, 49, 0.7);
+        margin: 5px 0px;
+    }
+    .chart-way-sm .chart1{
+        min-height: auto !important;
+        min-width: 80% !important;
+    }
+    .chart-way-sm .chart2{
+        min-height: auto !important;
+        min-width: 75% !important;
+    }
+    .chart-way-sm .chart3{
+        min-height: auto !important;
+        min-width: 90% !important;
+    }
+    .w-sm-100{
+        width: 100% !important;
+    }
+    .logo-do{
+        width: 70px;
+        height: 70px;
+    }
+    .text-products{
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        z-index: 2;
+        color: #fff;
+        font-size: 26px;
+    }
+    .get-help .img-help{
+        width: 100%;
+    }
+    .fs-sm-14{
+        font-size: 14px;
+    }
+    .fs-sm-16{
+        font-size: 16px;
+    }
+    .fs-sm-18{
+        font-size: 18px;
+    }
+    .fs-sm-20{
+        font-size: 20px;
+    }
+    .fs-sm-24{
+        font-size: 24px;
+    }
+    .fs-sm-32{
+        font-size: 32px;
+    }
+    .fs-sm-38{
+        font-size: 38px;
+    }
+    .fs-sm-42{
+        font-size: 42px;
+    }
+}
